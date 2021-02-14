@@ -1,45 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laboratorio1</title>
+    <link rel = "stylesheet" href = "CSS/style.css">
 </head>
 <body>
     <header>
         <h1>Laboratorio 1</h1>
-        <span>Andrea Piñeiro Cavazos <br/> A01705681 <br/> A01705681@itesm.mx<span>
+        Nombre: Andrea Piñeiro Cavazos <br/> 
+        Matrícula: A01705681 <br/> 
+        Correo Institucional: A01705681@itesm.mx
     </header>
-    <h1>Un poco sobre mí</h1>
-    <img src = "/Lab1/Media/AndreaImagen.jpeg" alt= "AndreaFoto" widht="20%" >
-    <img src = "/Lab1/Media/MAQRO_Presentacion.png" alt = "Andrea Piñeiro Recital de Piano" width = "18%" >
-    
-    <section>
-        <p>
-            Mi nombre es Andrea Piñeiro Cavazos, estudio el 4° Semestre de la carrera "Ingeniería en Tecnologías Computacionales".
-            Me apasiona mucho la programación; es algo que descubrí al entrar a Universidad, pues antes no había tenido 
-            acercamiento.
-            <br> <br>
-            <strong>Actividades extraescolares:</strong>
-            <ul>
-                <li><strong>Piano:</strong> toco piano desde hace 3 años, es algo que me gusta mucho. He participado en algunos 
-                recitales y presentaciones en lugares como el Museo de Arte de Querétaro.</li>
-                <li><strong>Guitarra y Ukelele:</strong> los toco desde hace 5 años, pero lo hago más como un Hobby.</li>
-                <li><strong>Teatro:</strong> He participado en obras escolares, y es mi segundo semestre en el Grupo Representativo
-                del Tec.</li>
-                <li><strong>Armar modelos de papel, legos o rompecabezas:</strong> Disfruto mucho construir estas cosas.</li>
-                <li><strong>Aprender y hacer cursos: </strong>Me gusta mucho tomar cursos en Coursera, leer y aprender cosas nuevas. 
-                Los cursos que más me gustan son los relacionados con mi carrera.</li>
-                <li><strong>Hacer deporte: </strong>Me gusta mucho y me relaja. </li>
-            </ul>
-            
-        </p>
-    </section>
 
     <h1>Introducción a HTML5</h1>
+    <img class = "center" src = "https://codebrainer.azureedge.net/images/what-is-html.jpg" alt = "What Is HTML" width = "50%" >
     <ol>
-        <div>
+        <div class = "fondoHTML">
             <h3> <li> ¿Cuál es la diferencia entre Internet y la World Wide Web? </li></h3>
             <p> 
                 El <strong>internet</strong> es una red de computadoras conectadas entre sí alrededor de todo el mundo, 
@@ -48,10 +27,9 @@
                 del internet; y se pueden transmitir diversos tipos de datos a través de Protocolos. 
                 <br/> <ins>La web no existe sin el Internet, pero en el Internet hay más que la web. </ins>
             </p>
-            <br>
         </div>
         <hr>
-        <div>
+        <div class = "fondoHTML">
             <h3> <li> ¿Cuáles son las partes de un URL?</li></h3>
             <ul>
                 <li> <strong>Protocolo HTTPS:</strong> sirve para transferir información dentro de la Web. </li>
@@ -64,10 +42,10 @@
                 <li> <strong>Etiqueta:</strong> nos permiten hacer scroll hacia un elemento o parte de una página web, 
                     aparece después del <q>#</q>.</li>
             </ul>
-            <br>
         </div>
+        <img src = "https://neliosoftware.com/es/wp-content/uploads/sites/3/2019/09/fullurlending.png" alt = "Parts of a URL" width = "100%" >
         <hr>
-        <div>
+        <div class = "fondoHTML">
             <h3> <li> ¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE? </li></h3>
             <ul>
                 <li> <strong>GET:</strong> leer una representación de un recurso específico. Se usa para buscar y obtener datos en un formato concreto.</li>
@@ -77,53 +55,49 @@
                 <li> <strong>PATCH:</strong> actualizar contenidos, pero actualmente es más usado que PUT.</li>
                 <li> <strong>DELETE:</strong> elimina un recurso específico.</li>
             </ul>
-            <br>
         </div>
         <hr>
-        <div>
+        <div class = "fondoHTML">
             <h3> <li> ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué? </li></h3>
             <p>
                 <strong>POST</strong>, para enviar los datos del usuario al servidor.
             </p>
-            <br>
         </div>
         <hr>
-        <div>
+        <div class = "fondoHTML">
             <h3> <li> ¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</li></h3>
             <p>
                 <strong>GET</strong>, para recuperar los datos de la petición, obtener los datos de un recurso.
             </p>
-            <br>
         </div>
+        <img class = "center" src = "https://miro.medium.com/max/1018/0*XB5zwH2FMnsOh7tc.png" alt = "Métodos HTTP" width = "50%" >
         <hr>
-        <div>
+        <div class = "fondoHTML">
             <h3> <li> Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</li></h3>
             <p>
                 Significa que la operación fue <b>exitosa</b>, no hubo ningún error; la página cargo correctamente.
                 Los códigos que tengan el formato <b>2XX</b> indican que la carga fue correcta.
             </p>
-            <br>
         </div>
         <hr>
-        <div>
+        <div class = "fondoHTML">
             <h3> <li> ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</li></h3>
             <p>
                 No, a menos que sea un link roto. Normalmente cuando aparece este error es porque el usuario quiso acceder a un recurso <i>no disponible</i>. 
             </p>
-            <br>
         </div>
         <hr>
-        <div>
+        <div class = "fondoHTML">
             <h3> <li> ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</li></h3>
             <p>
                 Si es su responsabilidad, ya que este error se presenta cuando hubo un error al intentar acceder al servidor. <b><i>500 Internal Server Error.</i></b>
                 <br> Este mensaje indica que se ha producido un error en la conexión con el servidor y, por lo tanto, no se puede acceder a la página solicitada.
             </p>
-            <br>
         </div>
-        <img src = "Lab1/Media/ErroresHTTP.jpg" alt = "Errores HTTP" width = "18%" >
+        <img class = "center" src= "https://adictec.com/wp-content/uploads/2018/08/C%C3%B3digos-de-Estado-HTTP-1.png" alt = "Errores HTTP" width="20%">
+        <br>
         <hr>
-        <div>
+        <div class = "fondoHTML">
             <h3> <li> ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</li></h3>
             <p>
                 <strong><i>Deprecated</i></strong> significa que su uso ya no es recomendado; sucede porque el estándar es 
@@ -146,7 +120,7 @@
         </div>
         <br>
         <hr>
-        <div>
+        <div class = "fondoHTML">
             <h3> <li> ¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</li></h3>
             <ul>
                 <li>HTML5 es compatible con HTML4 y XHTML 1.0</li>
@@ -159,25 +133,13 @@
                 <li><strong>Algunos atributos cambiaron</strong> como type, name, summary.</li>
                 <li><strong>Algunos elementos desaparecieron</strong> como basefont, big, center.</li>
                 <li><strong>Algunos atributos desaparecieron</strong> como align, background, bgcolor.</li>
-            </ul>
-            <br>
-            <br>
+            </ul>  
         </div>
+        <br>
         <hr>
-        <div>
+        <div class = "fondoHTML">
             <h3> <li> ¿Qué componentes de estructura y estilo tiene una tabla? </li></h3>
             <table>
-                <style>
-                    table, th, td {
-                      border: 2px solid black;
-                      border-collapse: collapse;
-                    }
-                    th, td {
-                      padding: 5px;
-                      text-align: left;    
-                    }
-                </style>
-
                 <thead>
                     <tr>
                         <th>Componente</th>
@@ -216,10 +178,9 @@
                 </tbody>
             </table>
             <br>
-            <br>
         </div>
         <hr>
-        <div>
+        <div class = "fondoHTML">
             <h3> <li> ¿Cuáles son los principales controles de una forma HTML5?</li></h3>
             <p>
                 <strong>Controles principales:</strong>
@@ -230,23 +191,21 @@
                     <li>Input</li>
                 </ul>
             </p>
-            <br>
         </div>
         <hr>
-        <div>
+        <div class = "fondoHTML">
             <h3><li> ¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar 
                 la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta 
                 recuerda poner el navegador que utilizas) </li></h3>
             <p>
                 <strong>Navegador:</strong> Google Chrome
-                <br>
-                <img src= "/Lab1/Media/BrowserScore.jpg" alt= "Chrome Score">
             </p>
-            <br>
         </div>
+        <img class = "center" src= "Media/BrowserScore.jpg" alt= "Chrome Score">
+        <br>
         <hr>
-        <div>
-            <h2> Sobre el ciclo de vida de los sistemas de información:</h2>
+        <h2> Sobre el ciclo de vida de los sistemas de información:</h2>
+        <div class = "fondoHTML">
             <h3> <li> ¿Cuál es el ciclo de vida de los sistemas de información?</li></h3>
             <p>
                 Un sistema de información está formado por la infraestructura, organización, personal y los componentes
@@ -266,10 +225,9 @@
                     los problemas que puedan surgir.</li>
                 </ul>
             </p>
-            <br>
         </div>
         <hr>
-        <div>
+        <div class = "fondoHTML">
             <h3> <li> ¿Cuál es el ciclo de desarrollo de sistemas de información?</li></h3>
             <p>
                 Es un proceso lógico para desarrollar un sistema de información. <br>
@@ -285,34 +243,46 @@
                     <li><strong>Despliegue: </strong> Actividades que hacen que un sistema de software.</li>
                     <li><strong>Soporte: </strong>Mantenimiento que se le da a un sistema.</li>
                     <li><strong>Disposición: </strong> Estructura del sistema de información</li>
-                    <br>
                 </ul>
             </p>
         </div>
+        <hr>
     </ol>
+
+    <section>
+        <br>
+        <form>
+            <label> Da click para regresar a mi información</label>
+            <input type = "button" class = "button" onclick = "location.href='Lab1.html'" value = "Sobre mí" />
+        </form>
+        <form>
+            <label> Da click para aprender sobre CSS</label>
+            <input type = "button" class = "button" onclick = "location.href='Lab3.html'" value = "Preguntas de CSS" />
+        </form>
+    </section>
+    <br>
 
     <footer>
         <strong>Bibliografía:</strong><br>
         <ul>
             <li>Becerra, J. (2019). ¿Cuál es la diferencia entre Internet y la World Wide Web? Cio México. Consultado de 
-                <a href= "https://cio.com.mx/cual-es-la-diferencia-entre-internet-y-la-world-wide-web/">https://cio.com.mx/cual-es-la-diferencia-entre-internet-y-la-world-wide-web/ </a>
+                <a target = "_blank" href= "https://cio.com.mx/cual-es-la-diferencia-entre-internet-y-la-world-wide-web/">https://cio.com.mx/cual-es-la-diferencia-entre-internet-y-la-world-wide-web/ </a>
                 el 8 de febrero de 2021.
             </li>
             <li>
                 Copes, F. (2019). The HTML Handbook. FreeCodeCamp. Consultado de 
-                <a href= "https://www.freecodecamp.org/news/the-html-handbook/"> https://www.freecodecamp.org/news/the-html-handbook/ </a>
+                <a target = "_blank" href= "https://www.freecodecamp.org/news/the-html-handbook/"> https://www.freecodecamp.org/news/the-html-handbook/ </a>
                 el 8 de febrero de 2021.
             </li>
             <li>
                 Pukocz, E. (S,F). Partes de una URL. Consultado de 
-                <a href= "https://www.freecodecamp.org/news/the-html-handbook/"> https://www.freecodecamp.org/news/the-html-handbook/ </a>
+                <a target = "_blank" href= "https://edytapukocz.com/url-partes-ejemplos-facil/"> https://edytapukocz.com/url-partes-ejemplos-facil/ </a>
                 el 8 de febrero de 2021.
             </li>
             <br>
         </ul>
         <strong>Editor de HTLM:</strong> VisualStudio Code <br/> 
-        <strong>URL: </strong> <a href= "https://edytapukocz.com/url-partes-ejemplos-facil/"> https://edytapukocz.com/url-partes-ejemplos-facil/ </a>
-
+        <strong>URL: </strong> <a href= "https://code.visualstudio.com/"> https://code.visualstudio.com/ </a>
     </footer>
-</body>
+<body>
 </html>
