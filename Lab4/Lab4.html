@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "CSS/style.css">
+</head>
+<body>
+    <header id = "border">
+        <h1>Laboratorio 4</h1>
+        Nombre: Andrea Piñeiro Cavazos <br/> 
+        Matrícula: A01705681 <br/> 
+        Correo Institucional: A01705681@itesm.mx
+    </header>
+
+    <br>
+    <button class = "button" onclick = table_1()> Función 1: Tabla </button>
+    <button class = "button" onclick = suma_2()> Función 2: Suma </button>
+    <button class = "button" onclick = array_3()> Función 3: Arreglo </button>
+    <button class = "button" onclick = promedio_4()> Función 4: Promedio </button>
+    <button class = "button" onclick = inverso_5()> Función 5: Inverso </button>
+    <button class = "button" onclick = foxDividingCheese_6()> Función 6: Libre </button>
+    
+    <ol>
+        <div>
+            <h3> <li> ¿Qué diferencias y semejanzas hay entre Java y JavaScript? </li></h3>
+            <p> 
+                <strong><em>Diferencias:</em></strong>
+                <ul>
+                    <li>Java es un lenguaje de programación y JavaScript no, aunque comparten la misma sintaxis.  </li>
+                    <li>JavaScript está <strong>basado en objetos</strong> (usado para la 
+                        interacción de sitios web), mientras que Java es un <strong>lenguaje de programación orientada a 
+                        objetos </strong>, además de ser multiplataforma. </li>
+                    <li>Java es un lenguaje de tipos rigurosos <strong><em>(strongly typed language)</em></strong>, 
+                        mientras que JavaScript es un lenguaje de tipos permisivos. </li>
+                    <li> Java es un lenguaje <strong>compilado</strong> y JavaScript uno <strong>interpretado</strong>
+                         por el cliente (navegador).</li>
+                    <li>JavaScript no necesita declaración de tipos de variables, además no puede escribir en el disco 
+                        duro (excepto con cookies), por lo que es un lenguaje seguro en Internet.</li>
+                </ul>
+                <strong><em>Similitudes:</em></strong>
+                <ul>
+                    <li>Ambos lenguajes utilizan una <strong>sintaxis similar</strong> para condicionales y ciclos 
+                        (if, for, while).</li>
+                    <li>Se utiliza <strong><q>;</q></strong> para terminar declaraciones y <strong><q>return</q></strong> 
+                        para dedvolver valores.</li>
+                </ul>
+            </p>
+        </div>
+        <img class = "center" src = "https://miro.medium.com/max/800/1*ymgzIlxykSI7--smaBN5mA.png" alt = "Java vs JavaScript" width = "50%" >
+        <hr>
+        <div>
+            <h3> <li> ¿Qué métodos tiene el objeto Date? (Menciona al menos 5*) </li></h3>
+            <p> 
+                <ul>
+                    <li><strong><em>getDate() </em></strong> Devuelve el día del mes. Número entre el 1 y el 31.</li>
+                    <li><strong><em>getDay() </em></strong> Devuelve el día de la semana de la semana. Número entre 0 (domingo) y 6(sábado).</li>
+                    <li><strong><em>getFullYear() </em></strong> Devuleve el año con 4 dígitos.</li>
+                    <li><strong><em>getMinutes() </em></strong> Devuelve los minutos. Número entre 0 y 59.</li>
+                    <li><strong><em>getMilliseconds() </em></strong> Devuelve los milisegundos. Número entre 0 y 9999.</li>
+                    <li><strong><em>getTime() </em></strong> Devuelve milisegundos transcurridos entre el día 1 de enero de 1970 y la fecha actual.</li>
+                    <li><strong><em>getDate() </em></strong> Actualiza el día del mes. </li>
+                </ul>
+            </p>
+        </div>
+        <hr>
+        <div>
+            <h3> <li> ¿Qué métodos tienen los arreglos? (Menciona al menos 5*) </li></h3>
+            <p> 
+                <ul>
+                    <li><strong><em>toString() </em></strong> Convierte un arreglo en un string con los elementos separados por comas.</li>
+                    <li><strong><em>join() </em></strong> Combina los elementos en una string, puedes especificar el separador.</li>
+                    <li><strong><em>pop() </em></strong>Elimina el último elemento del arreglo.</li>
+                    <li><strong><em>push() </em></strong> Agrega un elemento al final del arreglo.</li>
+                    <li><strong><em>shift() </em></strong> Elimina el primer elemento del arreglo, y cambia los demás al índice anterior.</li>
+                    <li><strong><em>splice() </em></strong> Se utiliza para insertar elementos en una posición del array y eliminar un cierto 
+                        número de elementos a partir de esa posición. </li>
+                        <ul>
+                            <li><strong>Ejemlo:</strong> arreglo.splice(3, 4, "manzana", “pera”);</li>
+                            <li>Se eliminan 4 elementos del arreglo a partir de la posición 3 y se agregan "manzana" y "pera" en las posiciones 
+                                3 y 4 del arreglo, respectivamente.</li>
+                        </ul>
+                    <li><strong><em>length() </em></strong> Devuelve el tamaño del arreglo.</li>
+                </ul>
+            </p>
+        </div>
+        <img class = "center" src = "https://cdn.educba.com/academy/wp-content/uploads/2019/09/Arrays-in-JavaScript.png" alt = "Arrays in JavaScript" width = "50%" >
+        <hr>
+        <div>
+            <h3> <li> ¿Cómo se declara una variable con alcance local dentro de una función?) </li></h3>
+            <p> 
+                Las variables se declaran con la palabra reservada <em><strong>let</strong></em>. <br>
+                <strong>Ejemplo:</strong> <code>let x = 2;</code>
+                Antes solían declararse con <em><strong>var</strong></em>, pero ya no se usa tanto debido a que 
+                se declara como variable global.<br>
+
+            </p>
+        </div>
+        <hr>
+        <div>
+            <h3> <li> ¿Qué implicaciones tiene utilizar variables globales dentro de funciones? </li></h3>
+            <p> 
+                Una <strong>función global </strong> esta definida en cualquier punto del programa, no solamente en la función en la que se declara. 
+                <strong><em>Existen diferentes implicaciones:</em></strong>
+                <ul>
+                    <li>Una variable global puede afectar o producir cambios en otras funciones o partes del código. </li>
+                    <li>Hace el código menos legible, pues necesitas recordar la función de las variables globales.</li>
+                    <li>Se ocupa más espacio del necesario, pues está variable esta en todo el programa; en cambio cuando 
+                        se declara como <strong>variable local</strong>, se elimina al salir de la función.</li>
+                </ul>
+            </p>
+        </div>
+    </ol>
+
+
+    <footer>
+        <strong>Bibliografía:</strong><br>
+        <ul>
+            <li>Richardson, A. (2018). Some Similarities Between Java And JavaScript. Eviltester. Consultado de 
+                <a target = "_blank" href= "https://www.eviltester.com/2018/05/some-similarities-between-java-and-javascript.html"> https://www.eviltester.com/2018/05/some-similarities-between-java-and-javascript.html </a>
+                el 13 de febrero de 2021.
+            </li>
+            <li>
+                Rodríguez Juan. (2005, marzo 17). Diferencias entre Java y JavaScript. Gestiopolis. Consultado de 
+                <a target = "_blank" href= "https://www.gestiopolis.com/diferencias-java-javascript/"> https://www.gestiopolis.com/diferencias-java-javascript/ </a>
+                el 13 de febrero de 2021.
+            </li>
+            <li>
+                JavaScript Array Methods. (2015). W3schools.com.  Consultado de 
+                <a target = "_blank" href= "https://www.w3schools.com/js/js_array_methods.asp"> https://www.w3schools.com/js/js_array_methods.asp </a>
+                el 13 de febrero de 2021.
+            </li>
+            <li>
+                JavaScript Date Reference. (2021). W3schools.com. Consultado de 
+                <a target = "_blank" href= "https://www.w3schools.com/jsref/jsref_obj_date.asp"> https://www.w3schools.com/jsref/jsref_obj_date.asp </a>
+                el 13 de febrero de 2021.
+            </li>
+            <br>
+        </ul>
+        <strong>Editor de HTLM:</strong> VisualStudio Code <br/> 
+        <strong>URL: </strong> <a href= "https://code.visualstudio.com/"> https://code.visualstudio.com/ </a>
+    </footer>
+
+    <script src = "JS/functions.js"> </script>
+    
+</body>
+</html>

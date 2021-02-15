@@ -63,12 +63,8 @@ a {
     color: #e81c4f;
 }
 
-.fondoHTML {
-    background-color: rgb(255, 238, 223);
-}
-
-.fondoCSS {
-    background-color: rgba(225, 242, 250, 0.863);
+#border {
+    border: black 2px solid;
 }
 
 .center {
@@ -96,5 +92,3 @@ a {
     background-color: #fd97a0e5;
     color: white;
 }
-
-
