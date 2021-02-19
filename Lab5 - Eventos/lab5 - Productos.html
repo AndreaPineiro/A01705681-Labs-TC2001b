@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio5</title>
+    <link rel = "stylesheet" href = "CSS/style.css">
+    <link rel = "stylesheet" href = "CSS/products.css">
+    <script src="https://kit.fontawesome.com/448986340b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id = "border">
+        <h1>Laboratorio 5</h1>
+        Nombre: Andrea Piñeiro Cavazos <br/> 
+        Matrícula: A01705681 <br/> 
+        Correo Institucional: A01705681@itesm.mx
+    </header>
+    <br>
+    <p>
+        Desarrolla una página para vender 3 productos de tu interés, con los precios y promociones 
+        a tu gusto. La página debe permitir al usuario escoger la cantidad de unidades de cada producto, 
+        y debe mostrar el precio total, el IVA que se está cargando, y toda la información que consideres 
+        pertinente para que la experiencia del usuario sea la mejor. La página debe validar los rangos 
+        de las unidades de cada producto.
+    </p>
+    <p>
+        Para la página que realicé, el usuario puede comprar hasta <strong>5 objetos</strong> de cada producto,
+        pues son los que están en inventario. En la parte inferior, puede consultar el subtotal, iva y total
+        de su compra.
+    </p>
+
+    <h1>Productos</h1>
+
+    <div class = "producto">
+        <img src = "https://www.radioshack.com.mx/medias/100007533.jpg-515ftw?context=bWFzdGVyfHJvb3R8OTU5MjF8aW1hZ2UvanBlZ3xoZTIvaDUwLzg5ODMxNTc4MzM3NTguanBnfDM1MGM4ZTBiNzk4YjQyMzRiNTY2ZGJjZTVjMjExNzM3MDllNTZkM2Q3MTRmZDY5YWVlZTJkNzdhY2EwNjc1YjE" alt = "Alexa Echo Dot">
+        <div>
+            <h1>Alexa Echo Dot</h1>
+            <h2> $ <span class = "price">1,500</span>.00</h2>
+            <br>
+            <div>
+                <i class = "fas fa-chevron-up"></i>
+                <p class = "item_amount">0</p>
+                <i class = "fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class = "producto">
+        <img src = "https://static.kemikcdn.com/2020/03/AMAZFIT-GTS-ROSA-1000X1000.jpg" alt = "Xiaomi Amazfit">
+        <div>
+            <h1>Amazfit Reloj Inteligente</h1>
+            <h2> $ <span class = "price"> 2,200</span>.00</h2>
+            <br>
+            <div>
+                <i class = "fas fa-chevron-up"></i>
+                <p class = "item_amount">0</p>
+                <i class = "fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class = "producto">
+        <img src = "https://mxsonyb2c.vteximg.com.br/arquivos/ids/257874-1000-1000/5d02da5df552836db894cead8a68f5f3.jpg?v=637323405320470000" alt = "Sony Audifonos">
+        <div>
+            <h1>Sony Audífonos Inalámbricos</h1>
+            <h2> $ <span class = "price"> 7,500</span>.00</h2>
+            <br>
+            <div>
+                <i class = "fas fa-chevron-up"></i>
+                <p class = "item_amount">0</p>
+                <i class = "fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <div class = "mi_Carrito">
+        <h1>Mi carrito:</h1>
+        <h3> Subtotal : $ <span class = "subtotal">0</span>.00</h3>
+        <h3> Iva : $<span class = "iva">0</span>.00</h3>
+        <h2> Total : $ <span class = "total">0</span>.00</h2>
+        <button class = "clear">Clear Cart</button>
+
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    
+    <footer>
+        <form>
+            <label> Da click para validar tu contraseña</label>
+            <input class = "button" type = "button" onclick = "location.href='Lab5 - Contraseña.html'" value = "Validar contraseña" />
+        </form>
+    </footer>
+    
+
+    <script src = "JS/products.js"> </script>
+    
+    
+</body>
+</html>

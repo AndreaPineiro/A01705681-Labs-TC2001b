@@ -9,6 +9,7 @@ body {
     color: #555;
     place-items: center;
     text-align: center;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/papyrus.png");
 }
 
 header h1 {

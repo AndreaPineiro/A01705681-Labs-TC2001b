@@ -118,7 +118,9 @@ function inverso_5() {
 
 function foxDividingCheese_6(){
     let a = prompt("Ingresa el peso de la 1er pieza de queso");
+    a = checarInput(a);
     let b = prompt("Ingresa el peso de la 2a pieza de queso");
+    b = checarInput(b);
     let ans = 0;
 
     let factores_a = [0, 0, 0];
@@ -139,6 +141,21 @@ function foxDividingCheese_6(){
     }
 
     document.write(ans);
+}
+
+function checarInput(numero){
+    if (numero > 0 || (numero - Math.floor(numero) == 0)){
+        numero = numero;
+    }
+    do {
+        if (numero < 0){
+            numero = prompt ("Ingresa un número entero positivo ");
+        } 
+        if (numero - Math.floor(numero) != 0){
+            numero = prompt ("Ingresa un número entero positivo ");
+        }
+    } while (numero < 0 || (numero - Math.floor(numero) != 0));
+    return numero;
 }
 
 function encontrarFactores(factores, num, divisores) {

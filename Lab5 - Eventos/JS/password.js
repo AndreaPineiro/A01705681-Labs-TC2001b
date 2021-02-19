@@ -50,5 +50,5 @@ function mostrarPassword(){
     }else{
         showButton.style.display = "none";
     }
-  }
+}
 
