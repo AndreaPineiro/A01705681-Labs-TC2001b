@@ -86,6 +86,10 @@ a {
     background-color: rgba(225, 242, 250, 0.863);
 }
 
+.fondoMD {
+    background-color: rgba(190, 243, 225, 0.842);
+}
+
 .center {
     display: block;
     margin-left: auto;
