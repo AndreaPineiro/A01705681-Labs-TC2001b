@@ -4,6 +4,7 @@
     grid-template-columns: auto 1fr auto;
     grid-column-end: 1;
     margin: 3.5rem 5.5rem;
+    text-align: center;
 }
 
 .producto img {
