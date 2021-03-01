@@ -29,7 +29,7 @@ boton.onclick = function(){
       errorText.textContent = "¡Las contraseñas son válidas!";
       return false;
     }
-  }
+}
 
 function mostrarPassword(){
     if(confirmPassword.value != ""){

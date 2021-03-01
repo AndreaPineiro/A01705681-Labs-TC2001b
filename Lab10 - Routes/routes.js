@@ -316,11 +316,11 @@ const requestHandler = (request, response) => {
         // Submit 
         response.write("<h2>Escribe tu nombre</h2>");
 +       response.write('<form action="/" method="POST"><input type="text" name="nombre"><input type="submit" value="Enviar nombre"></form>');
-        response.write("<br>Para acceder a los nombres entra http://localhost:3000/nombres");
+        response.write("<br>Para acceder a los nombres entra a 'Usuarios.txt'");
 
         response.write("<br><br><h1>Un poco sobre mí</h1>");
         response.write('¡Hola! Mi nombre es Andrea Piñeiro Cavazos, estudio el 4° Semestre de la carrera "Ingeniería en Tecnologías Computacionales". Tengo 19 años y esta es mi primer página web para la clase de Construcción de Software y Toma de Decisiones.');
-        response.write(" Me apasiona mucho la programación; es algo que descubrí al entrar a Universidad, pues antes no había tenido acercamiento.");
+        response.write("Me apasiona mucho la programación; es algo que descubrí al entrar a Universidad, pues antes no había tenido acercamiento.");
         response.write("A continuación voy a compartir algo breve sobre mi, mis pasatiempos y actividades favoritas. <br> <br>");
         // Arte
         response.write("<div>");
