@@ -1,42 +1,21 @@
 const express = require('express');
-const app = express();
 const bodyParser = require('body-parser');
+const app = express();
 const rutasSobreMi = require("./routes/sobre_mi");
+const main = require("./routes/main");
 
-const nombres = ["Andrea Piñeiro"];
 
 app.use(bodyParser.urlencoded({extended: false}));
-app.use('/sobre_mi', rutasSobreMi);
 
 //Middleware
 app.use((request, response, next) => {
     console.log('¡Ya no tengo que reiniciar el servidor!');
+    console.log(request.url);
     next();
 });
 
-
-app.get('/Usuarios', (request, response, next) => {
-    write = "";
-
-    write += "<html>";
-    write += '<head><title>Servidor node</title><meta charset="UTF-8">';
-    write += '<meta name="viewport" content="width=device-width, initial-scale=1.0"></head>';
-    write += "<body>";
-    write += "<header>Nombre: Andrea Piñeiro Cavazos <br/>";
-    write += "Matrícula: A01705681 <br/>";
-    write += "Correo Institucional: A01705681@itesm.mx</header>";
-    write += "<h1>Usuarios:</h1>";
-    write += "<ul>";
-
-    for (let nombre of nombres) {
-        write += '<li>' + nombre + '</li>';
-    }
-    write += '</ul>';
-
-    write += '<br>Para volver a la página principal entra a </strong> <a href= "http://localhost:3000/"> http://localhost:3000/ </a> <br><br>';
-
-    response.send(write);
-});
+app.use('/main', main);
+app.use('/sobre_mi', rutasSobreMi);
 
 
 app.get('/', (request, response, next) => {
@@ -51,21 +30,6 @@ app.get('/', (request, response, next) => {
     write += "Matrícula: A01705681 <br/>";
     write += "Correo Institucional: A01705681@itesm.mx</header>";
 
-    write += "<h2>Escribe tu nombre</h2>";
-    write += '<form action="/" method="POST"><input type="text" name="nombre"><input type="submit" value="Enviar nombre"></form>';
-    write += '<br>Para acceder a los nombres entra a </strong> <a href= "/Usuarios"> http://localhost:3000/Usuarios </a> <br><br>';
-    write += '¡Hola! Mi nombre es Andrea Piñeiro Cavazos, estudio el 4° Semestre de la carrera "Ingeniería en Tecnologías Computacionales". Tengo 19 años y esta es mi primer página web para la clase de Construcción de Software y Toma de Decisiones.';
-    write += " Me apasiona mucho la programación; es algo que descubrí al entrar a Universidad, pues antes no había tenido acercamiento.";
-    write += " En las otras páginas voy a compartir algo breve sobre mi, mis pasatiempos y actividades favoritas. <br> <br>";
-    
-    write += "<h2> Menú: </h2>";
-    write += "<ul>";
-    write += '<li><strong>Arte: </strong> <a href= "/sobre_mi/Arte"> http://localhost:3000/sobre_mi/Arte </a> </li>';
-    write += '<li><strong>Aprender: </strong> <a href= "/sobre_mi/Aprender"> http://localhost:3000/sobre_mi/Aprender </a> </li>';
-    write += '<li><strong>Pasatiempos: </strong> <a href= "/sobre_mi/Pasatiempos"> http://localhost:3000/sobre_mi/Pasatiempos </a> </li>';
-    write += '<li><strong>Usuarios: </strong> <a href= "/Usuarios"> http://localhost:3000/Usuarios </a> </li>';
-    write += '</ul><br>';
-
     write += "<h1>Describe el archivo package.json.</h1>"
     write += "Los paquetes npm contienen un archivo llamado 'package.json', que contiene metadata (proveen información acerca de uno o más aspectos de datos). <br>";
     write += "Este documento provee información a npm que le permite identificar el proyecto, con datos como: <ul>";
@@ -79,6 +43,15 @@ app.get('/', (request, response, next) => {
     write += "<li><strong>nodemon:</strong> herramienta que corre automáticamente la aplicación de node cuando cambia el archivo.</li>";
     write += "<li><strong>body-parser:</strong> crea middlewares con la propiedad de 'req.body' con el cuerpo de Content-Type analizado. </li><br>";
     write += "</ul>";
+
+    write += "<h2> Menú: </h2>";
+    write += "<ul>";
+    write += '<li><strong>Principal: </strong> <a href= "/main"> http://localhost:3000/main </a> </li>';
+    write += '<li><strong>Arte: </strong> <a href= "/sobre_mi/Arte"> http://localhost:3000/sobre_mi/Arte </a> </li>';
+    write += '<li><strong>Aprender: </strong> <a href= "/sobre_mi/Aprender"> http://localhost:3000/sobre_mi/Aprender </a> </li>';
+    write += '<li><strong>Pasatiempos: </strong> <a href= "/sobre_mi/Pasatiempos"> http://localhost:3000/sobre_mi/Pasatiempos </a> </li>';
+    write += '<li><strong>Usuarios: </strong> <a href= "/main/Usuarios"> http://localhost:3000/main/Usuarios </a> </li>';
+    write += '</ul><br>';
 
 
     write += "<br><footer>";
@@ -99,14 +72,8 @@ app.get('/', (request, response, next) => {
 });
 
 
-app.post('/', (request, response, next) => {
-    //console.log(request.body.nombre);
-    nombres.push(request.body.nombre);
-    response.redirect('/Usuarios');
-});
-
 app.use( (request, response, next) => {
-    console.log(request.url);
+    //console.log(request.url);
     response.status(404);
     //response.statusCode = 404;
     //response.status(404).send('<h1>Page not found.</h1>');

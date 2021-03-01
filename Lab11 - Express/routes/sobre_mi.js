@@ -2,10 +2,6 @@ const express = require('express');
 
 const router = express.Router();
 
-console.log("ahh");
-
-
-
 router.use('/Arte', (request, response, next) => {
     write = "";
 
@@ -24,7 +20,8 @@ router.use('/Arte', (request, response, next) => {
     write += "<li><strong>Guitarra y Ukelele:</strong> los toco desde hace 5 años, pero lo hago más como un Hobby. Estos instrumentos me ayudan a relajarme y a divertirme.</li>";
     write += "<li><strong>Teatro:</strong> He participado en obras escolares, y este es mi segundo semestre en el Grupo Representativo de Teatro del Tec.</li><br>";
     write += "</ul></div><hr><br><br>";
-    write += '<br>Para volver a la página principal entra a </strong> <a href= "/"> http://localhost:3000/ </a> <br><br>';
+    write += '<br>Para volver a la página principal entra a </strong> <a href= "http://localhost:3000/"> http://localhost:3000/ </a> <br>';
+    write += '<br>Para volver a la página sobre mí entra a </strong> <a href= "http://localhost:3000/main"> http://localhost:3000/main </a> <br><br>';
     write += "</body>";
     write += "</html>";
 
@@ -48,7 +45,8 @@ router.use('/Aprender', (request, response, next) => {
     write += "<li><strong>Tomar cursos: </strong>Me gusta mucho tomar cursos en Coursera, leer y aprender cosas nuevas. Los cursos que más me gustan son los relacionados con mi carrera.</li>";
     write += "<li><strong>Leer: </strong>Uno de mis pasatiempos favoritos es leer, especialmente libros que hablen de psicología, finanzas y tecnología. Me gusta pues lo veo como una gran manera de aprender.</li><br>";
     write += "</ul></div><hr><br><br>";
-    write += '<br>Para volver a la página principal entra a </strong> <a href= "/"> http://localhost:3000/ </a> <br><br>';
+    write += '<br>Para volver a la página principal entra a </strong> <a href= "http://localhost:3000/"> http://localhost:3000/ </a> <br>';
+    write += '<br>Para volver a la página sobre mí entra a </strong> <a href= "http://localhost:3000/main"> http://localhost:3000/main </a> <br><br>';
     write += "</body>";
     write += "</html>";
 
@@ -71,7 +69,8 @@ router.use('/Pasatiempos', (request, response, next) => {
     write += "<li><strong>Armar modelos de papel, legos o rompecabezas:</strong> Disfruto mucho construir estas cosas.</li>";
     write += "<li><strong>Hacer deporte: </strong>Me gusta mucho y me relaja. </li><br><br>";
     write += "</ul></div><hr><br><br>";
-    write += '<br>Para volver a la página principal entra a </strong> <a href= "/"> http://localhost:3000/ </a> <br><br>';
+    write += '<br>Para volver a la página principal entra a </strong> <a href= "http://localhost:3000/"> http://localhost:3000/ </a> <br>';
+    write += '<br>Para volver a la página sobre mí entra a </strong> <a href= "http://localhost:3000/main"> http://localhost:3000/main </a> <br><br>';
     write += "</body>";
     
     write += "</html>";
