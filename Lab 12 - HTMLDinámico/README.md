@@ -19,7 +19,7 @@ USUARIO:
 - AGREGAR USUARIO: "/usuarios/agregar"
 
 ABOUT:
-    - SOBRE MÍ: "/about"
-    - SOBRE HTML: "/about/html"
-    - SOBRE CSS: "/about/css"
-    - SOBRE JS: "/about/js"
+- SOBRE MÍ: "/about"
+- SOBRE HTML: "/about/html"
+- SOBRE CSS: "/about/css"
+- SOBRE JS: "/about/js"
