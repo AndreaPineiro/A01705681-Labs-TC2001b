@@ -12,11 +12,11 @@ En la página usuarios/agregar se encuentra un campo que te pide tu nombre y los
 
 ## Rutas:
 PRINCIPAL: 
-    - TEMPLATING ENGINES: "/"
+- TEMPLATING ENGINES: "/"
 
 USUARIO:
-    - CONSULTAR USUARIOS: "/usuarios"
-    - AGREGAR USUARIO: "/usuarios/agregar"
+- CONSULTAR USUARIOS: "/usuarios"
+- AGREGAR USUARIO: "/usuarios/agregar"
 
 ABOUT:
     - SOBRE MÍ: "/about"
