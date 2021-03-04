@@ -7,7 +7,7 @@ const nombres = ["Andrea Piñeiro", "Felipe Yepez"];
 
 router.use(express.static(path.join(__dirname,  '..', 'public')));
 
-router.use('/agregar', (request, response, next) => {
+router.get('/agregar', (request, response, next) => {
     console.log('Alguien ingreso a la página agregar usuarios');
     response.render('agregarUsuario', {
         title: "Laboratorio 12 -  AgregarUsuarios",
@@ -15,8 +15,13 @@ router.use('/agregar', (request, response, next) => {
     });
 });
 
+router.post('/agregar', (request, response, next) => {
+    console.log(request.body.nombre);
+    nombres.push(request.body.nombre);
+    response.redirect('/usuarios');
+});
 
-router.get('/', (request, response, next) => {
+router.use('/', (request, response, next) => {
     console.log('Alguien ingreso a la página usuarios');
     response.render('usuarios', {
         lista_nombres: nombres,
@@ -24,12 +29,5 @@ router.get('/', (request, response, next) => {
         name: "Laboratorio 12 - Usuarios"
     });
 });
-
-router.post('/', (request, response, next) => {
-    //console.log(request.body.nombre);
-    nombres.push(request.body.nombre);
-    response.redirect('/usuarios/');
-});
-
 
 module.exports = router;

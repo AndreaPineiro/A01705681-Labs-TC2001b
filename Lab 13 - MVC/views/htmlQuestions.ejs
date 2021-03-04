@@ -1,0 +1,260 @@
+<%- include('partials/head.ejs') %>
+<%- include('partials/header.ejs') %>
+
+    <h1>Introducción a HTML5</h1>
+    <img class = "center" src = "https://codebrainer.azureedge.net/images/what-is-html.jpg" alt = "What Is HTML" width = "50%" >
+    <ol>
+        <div class = "fondoHTML">
+            <h3> <li> ¿Cuál es la diferencia entre Internet y la World Wide Web? </li></h3>
+            <p> 
+                El <strong>internet</strong> es una red de computadoras conectadas entre sí alrededor de todo el mundo, 
+                esta cuenta con muchos servicios que ofrecen conexión.
+                <br/> La <strong>World Wide Web (WEB)</strong> es una colección grande de páginas, esta funciona a través 
+                del internet; y se pueden transmitir diversos tipos de datos a través de Protocolos. 
+                <br/> <ins>La web no existe sin el Internet, pero en el Internet hay más que la web. </ins>
+            </p>
+        </div>
+        <hr>
+        <div class = "fondoHTML">
+            <h3> <li> ¿Cuáles son las partes de un URL?</li></h3>
+            <ul>
+                <li> <strong>Protocolo HTTPS:</strong> sirve para transferir información dentro de la Web. </li>
+                <li> <strong>Subdominio:</strong> va después del protocolo y antes del punto. </li>
+                <li> <strong>Dominio:</strong> nombre único para identificar una página web y encontrarla con facilidad. </li>
+                <li> <strong>TLD:</strong> dominio de nivel superior, tipo de página (.gob, .com, etc).</li>
+                <li> <strong>Ruta:</strong> lo que va después de <q>/</q>, subpáginas y páginas de un sitio web. </li>
+                <li> <strong>Parámetro:</strong> después del signo de interrogación, a veces se relacionan con una búsqueda, 
+                    parámetros de campañas publicitarias. </li>
+                <li> <strong>Etiqueta:</strong> nos permiten hacer scroll hacia un elemento o parte de una página web, 
+                    aparece después del <q>#</q>.</li>
+            </ul>
+        </div>
+        <img src = "https://neliosoftware.com/es/wp-content/uploads/sites/3/2019/09/fullurlending.png" alt = "Parts of a URL" width = "100%" >
+        <hr>
+        <div class = "fondoHTML">
+            <h3> <li> ¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE? </li></h3>
+            <ul>
+                <li> <strong>GET:</strong> leer una representación de un recurso específico. Se usa para buscar y obtener datos en un formato concreto.</li>
+                <li> <strong>HEAD:</strong> similar a GET pero no devuelve el contenido en el HTTP, manda el encabezado de la petición. </li>
+                <li> <strong>POST:</strong> enviar datos al servidor. También se pueden usar con GET pero tiene limitaciones.</li>
+                <li> <strong>PUT:</strong> actualizar contenidos.</li>
+                <li> <strong>PATCH:</strong> actualizar contenidos, pero actualmente es más usado que PUT.</li>
+                <li> <strong>DELETE:</strong> elimina un recurso específico.</li>
+            </ul>
+        </div>
+        <hr>
+        <div class = "fondoHTML">
+            <h3> <li> ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué? </li></h3>
+            <p>
+                <strong>POST</strong>, para enviar los datos del usuario al servidor.
+            </p>
+        </div>
+        <hr>
+        <div class = "fondoHTML">
+            <h3> <li> ¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</li></h3>
+            <p>
+                <strong>GET</strong>, para recuperar los datos de la petición, obtener los datos de un recurso.
+            </p>
+        </div>
+        <img class = "center" src = "https://miro.medium.com/max/1018/0*XB5zwH2FMnsOh7tc.png" alt = "Métodos HTTP" width = "50%" >
+        <hr>
+        <div class = "fondoHTML">
+            <h3><li> Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</li></h3>
+            <p>
+                Significa que la operación fue <b>exitosa</b>, no hubo ningún error; la página cargo correctamente.
+                Los códigos que tengan el formato <b>2XX</b> indican que la carga fue correcta.
+            </p>
+        </div>
+        <hr>
+        <div class = "fondoHTML">
+            <h3> <li> ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</li></h3>
+            <p>
+                No, a menos que sea un link roto. Normalmente cuando aparece este error es porque el usuario quiso acceder a un recurso <i>no disponible</i>. 
+            </p>
+        </div>
+        <hr>
+        <div class = "fondoHTML">
+            <h3> <li> ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</li></h3>
+            <p>
+                Si es su responsabilidad, ya que este error se presenta cuando hubo un error al intentar acceder al servidor. <b><i>500 Internal Server Error.</i></b>
+                <br> Este mensaje indica que se ha producido un error en la conexión con el servidor y, por lo tanto, no se puede acceder a la página solicitada.
+            </p>
+        </div>
+        <img class = "center" src= "https://adictec.com/wp-content/uploads/2018/08/C%C3%B3digos-de-Estado-HTTP-1.png" alt = "Errores HTTP" width="20%">
+        <br>
+        <hr>
+        <div class = "fondoHTML">
+            <h3> <li> ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</li></h3>
+            <p>
+                <strong><i>Deprecated</i></strong> significa que su uso ya no es recomendado; sucede porque el estándar es 
+                actualizado y algunas tags del lenguaje son eliminadas, agregadas o desaprobadas.
+            </p>
+            <br>
+            <b>Elementos desaprobados en HTML5:</b>
+            <ul>
+                <li>basefont</li>
+                <li>center</li>
+                <li>applet</li>
+                <li>acronym</li>
+                <li>rev</li>
+                <li>charset</li>
+                <li>shape</li>
+                <li>longdesc</li>
+                <li>target</li>
+                <li>nohref</li>
+            </ul>
+        </div>
+        <br>
+        <hr>
+        <div class = "fondoHTML">
+            <h3> <li> ¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</li></h3>
+            <ul>
+                <li>HTML5 es compatible con HTML4 y XHTML 1.0</li>
+                <li>Sintaxis simplificada.</li>
+                <li>Se introdujo el atributo <strong><i>meta</i></strong> para definir los caracteres que se usan.</li>
+                <li>Se simplificó el <i>DOCTYPE</i>.</li>
+                <li><strong>Nuevos elementos</strong> como section, article, header, footer.</li>
+                <li><strong>Nuevos atributos</strong> como media, charset, autofocus, placeholder.</li>
+                <li><strong>Algunos elementos cambiaron</strong> como a, b, i, menú.</li>
+                <li><strong>Algunos atributos cambiaron</strong> como type, name, summary.</li>
+                <li><strong>Algunos elementos desaparecieron</strong> como basefont, big, center.</li>
+                <li><strong>Algunos atributos desaparecieron</strong> como align, background, bgcolor.</li>
+            </ul>  
+        </div>
+        <br>
+        <hr>
+        <div class = "fondoHTML">
+            <h3> <li> ¿Qué componentes de estructura y estilo tiene una tabla? </li></h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Componente</th>
+                        <th>Significado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>< table > </td>
+                        <td>Define un contenedor para datos en forma de tabla.</td>
+                    </tr>
+                    <tr>
+                        <td>< thead ></td>
+                        <td>Define un grupo de filas al inicio de una tabla. <i>Encabezados</i></td>
+                    </tr>
+                    <tr>
+                        <td>< tbody ></td>
+                        <td>Define un grupo de filas para la tabla. <i>Contenido.</i></td>
+                    </tr>
+                    <tr>
+                        <td>< tfoot ></td>
+                        <td>Define un grupo de filas al final de la tabla.</td>
+                    </tr>
+                    <tr>
+                        <td>< tr ></td>
+                        <td>Define una fila de la tabla.</td>
+                    </tr>
+                    <tr>
+                        <td>< td ></td>
+                        <td> Define una celda de la tabla, debe estar debajo de <i>< tr ></i></tr></td>
+                    </tr>
+                    <tr>
+                        <td>< caption ></td>
+                        <td>Define el título de la tabla.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+        <hr>
+        <div class = "fondoHTML">
+            <h3> <li> ¿Cuáles son los principales controles de una forma HTML5?</li></h3>
+            <p>
+                <strong>Controles principales:</strong>
+                <ul>
+                    <li>Button</li>
+                    <li>Label</li>
+                    <li>Legend</li>
+                    <li>Input</li>
+                </ul>
+            </p>
+        </div>
+        <hr>
+        <div class = "fondoHTML">
+            <h3><li> ¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar 
+                la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta 
+                recuerda poner el navegador que utilizas) </li></h3>
+            <p>
+                <strong>Navegador:</strong> Google Chrome
+            </p>
+        </div>
+        <img class = "center" src= "Media/BrowserScore.jpg" alt= "Chrome Score">
+        <br>
+        <hr>
+        <h2> Sobre el ciclo de vida de los sistemas de información:</h2>
+        <div class = "fondoHTML">
+            <h3> <li> ¿Cuál es el ciclo de vida de los sistemas de información?</li></h3>
+            <p>
+                Un sistema de información está formado por la infraestructura, organización, personal y los componentes
+                necesarios para la recopilación, procesamiento, almacenamiento, transmisión, visualización y organización 
+                de los datos. <br>
+                El <i>ciclo de vida de un sistema de información</i> propone fases de análisis y diseño 
+                que sostiene que los sistemas son mejor desarrollados con el uso de un ciclo especifico de actividades. 
+                <br> <br>
+                <strong>Etapas del ciclo de vida:</strong>
+                <ul>
+                    <li><strong>Planificación: </strong> etapas previas.</li>
+                    <li><strong>Análisis: </strong>¿Qué es lo que se necesita?</li>
+                    <li><strong>Diseño: </strong>Estructura general del sistema</li>
+                    <li><strong>Implementación: </strong> Selecconar las herramientas y el entorno de nuestro sistema.</li>
+                    <li><strong>Pruebas: </strong> Corroborar que el diseño cumple con los requisitos.</li>
+                    <li><strong>Mantenimiento: </strong>Introducir los ajustes necesarios para mejorar el rendimiento y corregir
+                    los problemas que puedan surgir.</li>
+                </ul>
+            </p>
+        </div>
+        <hr>
+        <div class = "fondoHTML">
+            <h3><li> ¿Cuál es el ciclo de desarrollo de sistemas de información?</li></h3>
+            <p>
+                Es un proceso lógico para desarrollar un sistema de información. <br>
+                Este ciclo incluye los requisitos, la validación, formación, así como los usuarios. <br>
+                Hay una gran serie de sistemas de <i>ciclo de vida de desarrollo</i>, incluso incluyendo metodologías ágiles. <br>
+                <br>
+                <strong>Etapas del ciclo de desarrollo:</strong>
+                <ul>
+                    <li><strong>Planeación: </strong> etapas previas.</li>
+                    <li><strong>Definición de requisitos: </strong>Lo que debe hacer el sistema.</li>
+                    <li><strong>Diseño y Prototipado: </strong>Estructura del sistema y prototipos.</li>
+                    <li><strong>Fase de desarrollo y pruebas: </strong> Comprobar el funcionamiento.</li>
+                    <li><strong>Despliegue: </strong> Actividades que hacen que un sistema de software.</li>
+                    <li><strong>Soporte: </strong>Mantenimiento que se le da a un sistema.</li>
+                    <li><strong>Disposición: </strong> Estructura del sistema de información</li>
+                </ul>
+            </p>
+        </div>
+        <hr>
+    </ol>
+    <br>
+
+    <%- include('partials/menu.ejs') %>    
+
+        <strong>Bibliografía:</strong><br>
+        <ul>
+            <li>Becerra, J. (2019). ¿Cuál es la diferencia entre Internet y la World Wide Web? Cio México. Consultado de 
+                <a target = "_blank" href= "https://cio.com.mx/cual-es-la-diferencia-entre-internet-y-la-world-wide-web/">https://cio.com.mx/cual-es-la-diferencia-entre-internet-y-la-world-wide-web/ </a>
+                el 8 de febrero de 2021.
+            </li>
+            <li>
+                Copes, F. (2019). The HTML Handbook. FreeCodeCamp. Consultado de 
+                <a target = "_blank" href= "https://www.freecodecamp.org/news/the-html-handbook/"> https://www.freecodecamp.org/news/the-html-handbook/ </a>
+                el 8 de febrero de 2021.
+            </li>
+            <li>
+                Pukocz, E. (S,F). Partes de una URL. Consultado de 
+                <a target = "_blank" href= "https://edytapukocz.com/url-partes-ejemplos-facil/"> https://edytapukocz.com/url-partes-ejemplos-facil/ </a>
+                el 8 de febrero de 2021.
+            </li>
+            <br>
+        </ul>
+    
+        <%- include('partials/footer.ejs') %>
