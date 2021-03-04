@@ -1,4 +1,4 @@
-# Laboratorio 12
+# Laboratorio 13
 
 Generar desde el back-end, interfaces dinámicas HTML5 para el cliente por medio de un motor de templates y que incorporen partials.
 Utilizar EJS como motor de templates para generar html de manera dinámica. 
