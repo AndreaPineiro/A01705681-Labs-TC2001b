@@ -1,4 +1,4 @@
-SET DATEFORMAT dmy
+UPDATE Entregan SET DATEFORMAT dmy
 
 BULK INSERT A1705681.A1705681.[Entregan]
    FROM 'e:\wwwroot\rcortese\entregan.csv'
