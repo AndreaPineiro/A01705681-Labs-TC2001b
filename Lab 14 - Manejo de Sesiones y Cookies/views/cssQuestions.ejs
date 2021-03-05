@@ -1,0 +1,90 @@
+<%- include('partials/head.ejs') %>
+<%- include('partials/header.ejs') %>
+
+    <h1>Introducción a CSS</h1>
+    <img class = "center" src = "https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-css/sta-je-css.png" alt = "What Is CSS" width = "50%" >
+
+    <ol>
+        <div class = "fondoCSS">
+            <h3> <li> Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS?  </li></h3>
+            <p> 
+                La palabra clave <strong>!important</strong> se utiliza para dar mayor prioridad a cierto estilo, 
+                de manera que las instrucciones siguientes no puedan sobrescribirla. 
+                Se le da prioridad frente a todas las demás especificaciones. <br>
+                El <strong>problema</strong> con esto, es que si hiciéramos un trabajo limpio como ingenieros de software, no se necesitaría. 
+                Pues podría usarse aplicando clases, y priorizando de manera correcta para que tenga el estilo 
+                que queremos. <br>
+                Además, puede causar problemas para <strong>otros desarrolladores</strong> que quieran hacer cambios en el código,
+                por lo que deben ser usados cuidadosamente. 
+                <strong><em>Si se puede usar, pero debe usarse solo cuando sea necesario. </em></strong>
+            </p>
+        </div>
+        <hr>
+        <div class = "fondoCSS">
+            <h3> <li> Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado? </li></h3>
+            <p> 
+                Yo considero que debe elegirse <strong>cuidadosamente</strong>, pues puede afectar la visibilidad del texto de nuestra página. 
+                Puede causar que las letras no se vean por el color, o incluso si se ven, que cueste mucho trabajo para el lector. 
+                Además, y algo muy importante, es que puede quitar el <strong>foco de atención</strong> al contenido de nuestra página; cuando creamos 
+                una página queremos que el lector se centre en la información, una imagen lo hace más amigable, bonito y sencillo de leer, 
+                pero ponerla de fondo puede causar ruido y afectar el impacto de la página.
+            </p>
+        </div>
+        <hr>
+        <div class = "fondoCSS">
+            <h3> <li> Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt? </li></h3>
+            <p> 
+                Existen unidades de medida relatvas y absolutas. Las medidas <strong>relativas</strong>  son aquellas que determinan un tamaño en función de otro tamaño.
+                Las medidas <strong>absolutas</strong> son concretas, específicas y medibles. <br>
+                <ul>
+                    <li> El <strong>porcentaje (%)</strong> es una unidad relativa, pues indica la escala de la imagen o el estilo con respecto al tamaño de la ventana. </li>
+                    <li> Los <strong>píxeles (px)</strong> son de tamaño fijo (absolutas), determinan el tamaño de las unidades que se utilizan en la pantalla de los medios de 
+                        comunicación, es decir en una computadora. </li>
+                    <li> Los <strong>puntos (pt)</strong> también son absolutos, es igual a 1/72 de pulgada. Este tipo de unidad es la más usada para los medios impresos. </li>
+                </ul>
+                <br>
+                Yo recomiendo principalmente el uso de <strong><em>PÍXELES</em></strong>, pues es lo más preciso en el medio digital; así puedes indicar exactamente el 
+                tamaño en el que quieres que se muestre. En algunos casos, también consideraría usar %, especialmente en algunas imágenes; pues así al hacer la ventana más chica
+                la imagen no abarcará gran parte de la ventana, sino que se ajustará.
+            </p>
+        </div>
+        <hr>
+        <div class = "fondoCSS">
+            <h3> <li> ¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio? </li></h3>
+            <p> 
+                Una versisón minimizada tiene dos ventajas principales:
+                <ul>
+                    <li> <strong>Reduce el tamaño del archivo:</strong> gracias a que elimina comentarios y espacios
+                    blancos innecesarios. Esto hace que el script cargue de manera más rapida.</li>
+                    <li> <strong> Corre más rápido: </strong>esto debido a que los comentarios y los espacios en blanco no 
+                    deben ser ignorados.</li>
+                </ul>
+                <br>
+                Las versiones minimizadas mejoran el tráfico en la red y son más eficientes, por lo que suelen usarse
+                por compañías grandes como Google. 
+            </p>
+        </div>
+    </ol>
+
+<%- include('partials/menu.ejs') %>
+
+        <strong>Bibliografía:</strong><br>
+        <ul>
+            <li>CSS-Tricks. (2009, April 16). px - em - % - pt - keyword. CSS-Tricks. Consultado de 
+                <a target = "_blank" href= "https://css-tricks.com/css-font-size/">https://css-tricks.com/css-font-size/ </a>
+                el 12 de febrero de 2021.
+            </li>
+            <li>
+                César Krall. (2021). Unidades de medida CSS relativas o absolutas. in, cm, mm, pt, pc, pixel px, porcentaje, em, ex. Aprenderaprogramar. Consultado de 
+                <a target = "_blank" href= "https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=728:unidades-de-medida-css-relativas-o-absolutas-in-cm-mm-pt-pc-pixel-px-porcentaje-em-ex-cu01024d&catid=75&Itemid=203"> https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=728:unidades-de-medida-css-relativas-o-absolutas-in-cm-mm-pt-pc-pixel-px-porcentaje-em-ex-cu01024d&catid=75&Itemid=203 </a>
+                el 8 de febrero de 2021.
+            </li>
+            <li>
+                Pukocz, E. (S,F). Partes de una URL. Consultado de 
+                <a target = "_blank" href= "https://edytapukocz.com/url-partes-ejemplos-facil/"> https://edytapukocz.com/url-partes-ejemplos-facil/ </a>
+                el 8 de febrero de 2021.
+            </li>
+            <br>
+        </ul>
+    
+<%- include('partials/footer.ejs') %>

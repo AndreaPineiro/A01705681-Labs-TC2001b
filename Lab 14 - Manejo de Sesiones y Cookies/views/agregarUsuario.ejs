@@ -1,0 +1,14 @@
+<%- include('partials/head.ejs') %>
+<%- include('partials/header.ejs') %>
+
+    <h1>Escribe tu nombre:</h1>
+
+    <form class = "center" action="/usuarios/agregar" method="POST">
+        <input type="text" name="nombre">
+        <input type="submit" value="Enviar nombre">
+    </form>
+
+    <br>Para acceder a los nombres entra a </strong> <a href= "/usuarios"> http://localhost:3000/usuarios </a> <br><br>
+
+<%- include('partials/menu.ejs') %>
+<%- include('partials/footer.ejs') %>
