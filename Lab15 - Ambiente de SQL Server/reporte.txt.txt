@@ -1,0 +1,29 @@
+1. "sp_help materiales" ¿Qué muestra esta instrucción?
+
+    Muestra un resumen de información de los objetos que existen en la tabla.
+    Muestra primero algunos datos como el nombre de la tabla, el dueño, tipo y fecha en la que fue creada.
+    Después muestra los detalles de las columnas de la tabla de materiales; en este se muestra el 
+    tipo de dato de cada atriburo, si es calculado, longitud, si es nulo, etc.
+
+2. "crear.sql" ¿Que efecto tuvo esta acción?
+    Crear las tablas materiales, proyectos, proveedores y entregan al mismo tiempo.
+
+3 "crear.sql" ¿Qué utilidad tiene esta manera de ejecutar los comandos en SQL?
+    Es sencillo y poco complejo, pues te permite crearlas al mismo tiempo. 
+    Además, el tener este script en un archivo te permite visualizar y utilizar el
+    código despues, tanto para hacer cambios como para usarlo en otro proyecto.
+
+4. Abre una sesión de FTP y sube los siguientes archivos a tu directorio inicial.
+¿Qué relación tienen con las tablas de la base de datos?
+    La relación que tienen los archivos con las tablas de la base de datos, es que contiene registros que 
+    pueden pertenecer a cada una de las tablas. El tipo de dato es congruente y los valores hacen
+    sentido con los atributos de las tablas.
+
+5. ¿Qué relación tiene el contenido de este archivo (materiales.sql) con el formato en que se encuentran los datos en el archivo materiales.csv?
+    El archivo sql tiene código para añadir como registros los datos que aparecen en el .csv; el código indica la ruta
+    de donde se va a tomar el archivo. También especifica que cada campo de la tabla materiales debe tener un dato de materiales.csv
+    y esta usando comas para delimitarlo. Al final, también se indica que el registro terminará cuando se encuentre un salto de línea en el archivo.
+
+6. "SELECT * FROM Materiales" ¿Qué sucedió?
+    Este código muestra todos los registros cargados dentro de la tabla "Materiales".
+    Estos datos son los mismos que el archivo csv pero en columnas con el respectivo nombre de cada campo. 
