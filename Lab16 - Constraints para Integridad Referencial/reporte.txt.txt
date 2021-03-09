@@ -1,0 +1,98 @@
+INTEGRIDAD REFERENCIAL: Son reglas usadas para bases de datos relacionales, ayudan a asegurarse que los registros de las tablas relacionadas
+son válidos. Estas reglas evitan que los usuarios eliminen o cambien datos entre columnas relacionadas por accidente, produciendo errores de integridad.
+Esta integridad tiene que ver con la creación de llaves primarias y foráneas; un error común de integridad sería asignar a una llave foránea, un 
+dato que no exista en la otra tabla. 
+
+
+1. Agrega un nuevo registro a la tabla de materiales. Revisa el contenido de la tabla materiales y 
+determina si existe alguna inconsistencia en el contenido de la tabla. ¿Cuál es? ¿A qué se debe?
+    
+    Si se creó el registro, sin embargo la clave 1000, esta repetida para Varilla 3/4,
+    esta es una inconsistencia, pues la llave primaria debe ser única para cada registro.
+    La razón por la que se está dando este problema es porque no he definido cuál es la llave primaria.
+
+
+2. Define a la Clave como llave primaria mediante la creación de un constraint. Agrega nuevamente el registro a la tabla de materiales
+    ¿Qué ocurrió?
+    
+    Al crear el constraint y correr el código, no permite insertar el registro por que viola el Constraint de llaveMateriales,
+    y no se pueden insertar llaves duplicadas. 
+
+
+3. " sp_helpconstraint materiales" ¿Qué información muestra?
+
+    Muestra la información de los constraints en la tabla Materiales, en este caso solo hay uno.
+    Muestra el tipo de constraint (PRIMARY KEY), el nombre, y más información acerca de él
+
+
+4. ¿Qué sentencias utilizaste para definir las llaves primarias?
+
+    Fueron iguales a la anterior pero con algunos cambios:
+    ALTER TABLE Proveedores ADD CONSTRAINT llaveProveedores PRIMARY KEY (RFC)
+    ALTER TABLE Proyectos ADD CONSTRAINT llaveProyectos PRIMARY KEY (Numero)
+
+
+5. ¿Qué sentencias utilizaste para definir el constrait de Entregan?
+
+    Fue similar, pero recibe más campos como llave Primaria:
+    ALTER TABLE Entregan ADD CONSTRAINT llaveEntregan PRIMARY KEY (Clave, RFC, Numero, Fecha)
+
+
+6. Inserta un registro en la tabla Entregan. ¿Qué particularidad observas en los valores para clave, rfc y numero?
+
+    Los valores que se están dando no son válidos, pues no existe ningún Material con Clave 0,
+    un Proveedor con RFC 'xxx', ni un Proyecto con Numero 0.
+    No puede ser válido como entrega.
+
+
+7. ¿Cómo responde el sistema a la inserción de este registro?
+
+    El sistema inserta este registro con los valores correspondientes, no marca error. Esto debido
+    a que aún no se especifica que son Foreign Keys de las otras tablas.
+
+
+8. Agrega el Constraint de Llave Foranea en Materiales. Inserta nuevamente. 
+    ¿Qué significa el mensaje que emite el sistema?
+
+    El mensaje dice que hubo conflicto por el constraint de llave foránea. El conflicto fue con la Clave.
+
+
+9. ¿Qué significado tiene la sentencia anterior?
+
+    Que no se insertó el registro, debido a que es una llave foránea y en la tabla Materiales no hay ningun
+    material con Clave 0. Como ese material no existe, no pudo ser entregado.
+
+
+10. Revisa los constraints de cada tabla. "sp_helpconstraint tableName"
+    ¿Qué significan las columnas de esas consultas?
+
+    Contiene la columna de qué tipo es el Constraint (PRIMARY KEY/ FOREIGN KEY), el nombre que se le dio al constraint.
+    Y algunas otras columnas que indican si hay una acción para eliminar, de actualizar y de corroborar el estado.
+
+
+11. Inserta:  INSERT INTO entregan values (1000, 'AAAA800101', 5000, GETDATE(), 0);
+    ¿Qué uso se le está dando a GETDATE()?
+
+    GETDATE() devuelve la fecha y hora actual del sistema, en un formato 'YYYY-MM-DD hh:mm:ss.mmm'.
+    En este caso se esta usando para decir que la fecha de la entrega es la fecha y hora actual.
+
+
+12. ¿Tiene sentido el valor del campo de cantidad?
+    
+    No, el valor que se le esta dando es 0 y no tiene sentido una entrega en la que no se entrega material.
+
+
+13. Crea el Constraint de Check, inserta un registro con cantidad 0
+    ¿Cómo responde el sistema? ¿Qué significa el mensaje?
+
+    El sistema marca conflicto con el constraint Cantidad, y dice que ocurrio en la tabla Entregan columna Cantidad.
+    Este mensaje significa que no se puede insertar el registro, debido a que la cantidad de material entregado
+    es igual a 0. 
+
+
+REFERENCIAS:
+    - (2021). Conceptos Integridad referencial. Aulaclic.es. https://www.aulaclic.es/sql/b_8_1_1.htm. Consultado el 9 de marzo de 2021.
+    - Microsoft (2021). Mantener la integridad referencial en diagramas de modelo de base de datos. Microsoft.com. https://support.microsoft.com/es-es/office/mantener-la-integridad-referencial-en-diagramas-de-modelo-de-base-de-datos-80f60e10-1238-48f7-ab59-2bd31b2f047a. Consultado el 9 de marzo de 2021.
+
+‌
+‌
