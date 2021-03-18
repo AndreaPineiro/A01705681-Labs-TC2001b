@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 const about = require("./routes/about");
-const usuarios = require("./routes/usuarios");
+const productos = require("./routes/productos");
 const login = require("./routes/login");
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -28,7 +28,7 @@ app.use(session({
 }));
 
 app.use('/about', about);
-app.use('/usuarios', usuarios);
+app.use('/productos', productos);
 app.use('/login', login);
 
 app.use((request, response, next) => {
@@ -40,8 +40,8 @@ app.use((request, response, next) => {
 app.use('/', (request, response, next) => {
     console.log('Alguien ingreso a la página de inicio');
     response.render('paginaInicio', {
-        title: "Laboratorio 13",
-        name: "Laboratorio 13",
+        title: "Laboratorio 14",
+        name: "Laboratorio 14",
         isLoggedIn: request.session.isLoggedIn
     });
 });

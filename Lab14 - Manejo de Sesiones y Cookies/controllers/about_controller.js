@@ -27,5 +27,7 @@ exports.getJS = (request, response, next) => {
 
 exports.get = (request, response, next) => {
     console.log('Alguien ingreso a la página sobre mí');
-    response.render('sobreMi');
+    response.render('sobreMi', {
+        isLoggedIn: request.session.isLoggedIn
+    });
 };

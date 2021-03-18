@@ -5,17 +5,17 @@ Entender el funcionamiento de las sesiones y de las cookies. Implementar aplicac
 
 Para este laboratorio use las páginas que había creado antes con la información sobre mi, sobre html, css y js. Estos se encuentran dentro de un archivo de rutas "about.js"
 
-En la página usuarios/agregar se encuentra un campo que te pide tu nombre y los nombres de quienes han ingresado se muestran en /usuarios.
+En la página productos/agregar se encuentra un campo que te pide nombre, imagen y precio del producto; y los productosque se han ingresado se muestran en /productos.
 
-Se usa una Cookie para guardar el nombre del último usuario. Y usé sesiones para crear una página de login; solamente cuando el usuario se loggea puede acceder a las paginas de usuarios.
+Se usa una Cookie para guardar el nombre del último productos. Y usé sesiones para crear una página de login; solamente cuando el usuario se loggea puede acceder a las paginas de productos.
 
 ## Rutas:
 PRINCIPAL: 
 - HOME: "/"
 
-USUARIO:
-- CONSULTAR USUARIOS: "/usuarios"
-- AGREGAR USUARIO: "/usuarios/agregar"
+PRODUCTOS:
+- CONSULTAR PRODUCTOS: "/productos"
+- AGREGAR PRODUCTO: "/productos/agregar"
 
 ABOUT:
 - SOBRE MÍ: "/about"
