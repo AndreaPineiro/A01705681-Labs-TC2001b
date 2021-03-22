@@ -1,0 +1,41 @@
+<%- include('partials/head.ejs') %>
+<%- include('partials/header.ejs') %>
+<br>
+<h1>Interacción con la Base de Datos:</h1>
+<img class = "center" src = "https://miro.medium.com/max/1588/1*LbqYj87xlazySm6wE0Q2lA.png" alt = "Templating Engines" width = "50%" >
+<ol>
+    <div class = "fondoHTML">
+        <h3> <li> ¿Qué ventajas tiene escribir el código SQL únicamente en la capa del modelo? </li></h3>
+        <p> 
+            <ul>
+                <li>Tenemos todo el código SQL en un archivo, por lo que corregir problemas por consultas
+                    o crear nuevas, es muy sencillo.
+                </li>
+                <li>Mantiene la arquitectura MVC, por lo que facilita la corrección o mantenimiento de código.</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class = "fondoHTML">
+        <h3> <li> ¿Qué es SQL injection y cómo se puede prevenir? </li></h3>
+        <p> 
+            Es la inserción de código SQL en las formas donde se espera recibir datos.
+            Esto hace que nuestro código sea vulnerable a ataques en los sistemas de bases relacionales.
+            Al introudicr caracteres con funciones especiales en SQL, se puede influir externamente
+            en las instrucciones ejecutadas. <br>
+            Para prevenirlo, es necesario parametrizar las consultas; eso se puede hacer fácilmente escribiendo
+            signos de interrogación en las consultas. Estos signos de interrogración representa el valor de la consulta.
+        </p>
+        <br>
+        <ul>
+            <li>Inserción: SELECT * FROM Productos WHERE id_producto = ?', [id]</li>
+            <li>INSERT INTO productos (nombre, imagen, precio) VALUES (?, ?, ?)</li>
+        </ul>
+
+    </div>
+</ol>
+<br>
+
+<%- include('partials/menu.ejs') %>
+<%- include('partials/footer.ejs') %>
+

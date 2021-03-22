@@ -1,0 +1,122 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body {
+    margin: 0 auto;
+    max-width: 60em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height:1.8;
+    padding: 4em 3em;
+    color: #555;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/papyrus.png");
+}
+
+.border {
+    background-color: rgba(248, 192, 120, 0.561);
+    background-position: center top;
+    background-size: cover;
+    text-align: center;
+    line-height: 2;
+    padding: 2.5em 1em;
+    border: black 2px solid;
+}
+
+.border h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+
+.border:hover {
+    background:  #774141dc;
+    color: rgb(200, 150, 150);
+}
+  
+
+hr {
+    border: 2px solid rgb(117, 122, 124);
+}
+
+
+h1 {
+    padding-bottom: 0.2em;
+    color:rgb(124, 105, 114)
+}
+
+strong, h3 {
+    color: #333;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+h3 {
+    border-left: 6px solid black;
+    padding-left: 40px;
+}
+
+table, th, td {
+    border: 2px solid rgb(226, 130, 46);
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+
+a {
+    color: #e81c4f;
+}
+
+.fondoHTML {
+    background-color: rgb(255, 238, 223);
+}
+
+.fondoCSS {
+    background-color: rgba(225, 242, 250, 0.863);
+}
+
+.fondoMD {
+    background-color: rgba(190, 243, 225, 0.842);
+}
+
+.menu {
+    background-color: rgba(225, 208, 236, 0.692);
+}
+
+.menu:hover {
+    background-color: rgba(125, 39, 187, 0.322); 
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    align-items: center;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid #6b4747;
+    padding: 6px 6px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #fd97a0e5;
+    color: white;
+}
+
+.error {
+    color: red;
+}
