@@ -2,10 +2,10 @@
   "name": "lab12-htmldinamico",
   "version": "1.0.0",
   "description": "laboratorio 12, uso de templates y partials",
-  "main": "lab17.js",
+  "main": "lab18.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node lab17.js"
+    "start": "node lab18.js"
   },
   "repository": {
     "type": "git",

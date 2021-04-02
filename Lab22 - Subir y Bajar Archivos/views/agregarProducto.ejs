@@ -1,0 +1,29 @@
+<%- include('partials/head.ejs') %>
+<%- include('partials/header.ejs') %>
+
+    <h1>Agrega Producto:</h1>
+
+    <form class = "center" action="/productos/agregar?_csrf=<%=csrfToken%>" method="POST" enctype = "multipart/form-data">
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>" >
+        <label for="nombre_producto"> Nombre:&nbsp</label>
+        <input type="text" name="nombre_producto"><br><br>
+        <!-- <div class="input-group mb-3">
+            <label class="input-group-text" for="imagen_producto">Imagen: </label>
+            <input type="file" class="form-control" id="inputGroupFile01" name="imagen_producto">
+        </div> -->
+        <label for="imagen_producto"> Imagen:</label>
+        <input type="file" name="imagen_producto"><br><br>
+
+        <div class="input-group mb-3">
+            <label for="precio_producto"> Precio:&nbsp&nbsp&nbsp</label>
+            <span class="input-group-text">$</span>
+            <input type="number" name="precio_producto" >
+        </div>
+
+        <input type="submit" value="Guardar Producto">
+    </form>
+
+    <br>Para acceder a los productos entra a </strong> <a href= "/productos"> http://localhost:3000/productos </a> <br><br>
+
+<%- include('partials/menu.ejs') %>
+<%- include('partials/footer.ejs') %>

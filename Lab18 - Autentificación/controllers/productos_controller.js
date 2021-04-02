@@ -3,8 +3,8 @@ const Producto = require('../models/producto');
 exports.getAgregarProducto = (request, response, next) => {
     //console.log('Alguien ingreso a la página agregar productos');
     response.render('agregarProducto', {
-        title: "Laboratorio 17 -  AgregarProducto",
-        name: "Laboratorio 17 - Agregar Producto",
+        title: "Laboratorio 18 -  AgregarProducto",
+        name: "Laboratorio 18 - Agregar Producto",
         csrfToken: request.csrfToken(),
         isLoggedIn: request.session.isLoggedIn === true ? true : false
     });
@@ -42,8 +42,8 @@ exports.get = (request, response, next) => {
             // console.log(productos);
             response.render('productos', {
                 lista_productos: rows,
-                title: "Laboratorio 17 -  Productos",
-                name: "Laboratorio 17 - Productos",
+                title: "Laboratorio 18 -  Productos",
+                name: "Laboratorio 18 - Productos",
                 isLoggedIn: request.session.isLoggedIn === true ? true : false
             });
         })
@@ -58,8 +58,8 @@ exports.getProducto = (request, response, next) => {
         .then(([rows, fieldData]) => {
             response.render('productos', {
                 lista_productos: rows,
-                title: "Laboratorio 17 -  Producto",
-                name: "Laboratorio 17 - Producto",
+                title: "Laboratorio 18 -  Producto",
+                name: "Laboratorio 18 - Producto",
                 isLoggedIn: request.session.isLoggedIn === true ? true : false
             });
         })
