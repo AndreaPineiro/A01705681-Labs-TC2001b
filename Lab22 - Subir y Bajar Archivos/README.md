@@ -1,8 +1,8 @@
-# Laboratorio 18
+# Laboratorio 22
 
-Entender cómo funciona la autentificación de usuarios. Desarrollar aplicaciones web con autentificación de usuarios. Desarrollar aplicaciones web con rutas protegidas. Desarrollar aplicaciones web protegidas contra ataques CSRF.
+Entender cómo funciona la subida de archivos a un servidor. Desarrollar aplicaciones web que le permitan a los usuarios subir archivos que se almacenen en el servidor.
 
-Para este laboratorio, se creo las funcionalidades para que el usuario se autentifiqué y se protegieron las rutas.
+Para este laboratorio, al agregar un nuevo producto, se permite la subida de archivos, estas imágenes se almacenan dentro del servidor para que la base de datos solo contenga la ruta del archivo.
 
 Use las páginas que había creado antes con la información sobre mi, sobre html, css y js. Estos se encuentran dentro de un archivo de rutas "about.js"
 
