@@ -1,0 +1,28 @@
+<%- include('partials/head.ejs') %>
+<%- include('partials/header.ejs') %>
+<br>
+<h1>Autentificación:</h1>
+<img class = "center" src = "https://rootear.com/files/2018/05/2FA2.jpg" alt = "Autentificación" width = "50%" >
+<ol>
+    <div class = "fondoHTML">
+        <h3> <li> ¿Qué otras formas de autentificación existen? </li></h3>
+        <p> 
+            Existen diferentes formas de autenticación, empezando por el número de 
+            campos necesarios. 
+            <ul>
+                <li><strong>En dos pasos: </strong> Esta es una de las más usadas de manera global</li>
+                <li><strong>Mediante SMS: </strong>Es un tipo de autenticación en 2 pasos; el sistema envía un código alfanumérico como SMS y el usuario debe registrarlo para acceder.</li>
+                <li><strong>Mediante aplicaciones OATH TOTP: </strong>Se usa una aplicación de terceros como Google Autenticator para generar un código temporal.</li>
+                <li><strong>A través de una URL: </strong>Similar al mensaje SMS, combina este con la web.</li>
+                <li><strong>Basada en factores biométricos: </strong>Se usan diferentes métodos, como reconocimiento facial, dactilar e incluso del iris. Su popularidad va en aumento.</li>
+                <li><strong>Otros métodos: </strong> Hay algunos métodos que poco a poco se están dejando de usar como las tarjetas de coordenadas, llamadas telefónicas, tokens, etc.</li>
+            </ul>
+            La autenticación puede estar basada en eventos, en tiempo o basada en Challenge-Response.
+        </p>
+    </div>
+</ol>
+<br>
+
+<%- include('partials/menu.ejs') %>
+<%- include('partials/footer.ejs') %>
+
